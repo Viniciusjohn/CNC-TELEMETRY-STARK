@@ -1,0 +1,1 @@
+// Arquivo removido. Funcionalidade migrada para CodexChat.tsx

@@ -1,0 +1,5 @@
+{
+  "name": "CNC Telemetry Dashboard",
+  "description": "Dashboard de telemetria industrial HMI para monitoramento em tempo real de CNCs Mitsubishi M70/M80 via MTConnect.",
+  "requestFramePermissions": []
+}
