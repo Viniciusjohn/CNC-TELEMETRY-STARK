@@ -1,0 +1,180 @@
+2025/12/05 14:32:13.790|INFO|[STARK_TORNO_PILOTO] Connecting broker 'tcp://127.0.0.1:1883/STARK_TORNO_PILOTO': Unspecified/127.0.0.1:1883 |l99.driver.fanuc.transports.MQTT|
+2025/12/05 14:32:15.968|WARN|[STARK_TORNO_PILOTO] Broker connection failed 'tcp://127.0.0.1:1883/STARK_TORNO_PILOTO': Unspecified/127.0.0.1:1883 |l99.driver.fanuc.transports.MQTT|
+2025/12/05 14:32:16.035|INFO|[STARK_TORNO_PILOTO] Creating collector: l99.driver.fanuc.collectors.MachineInfo, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:32:16.057|INFO|[STARK_TORNO_PILOTO] Creating collector: l99.driver.fanuc.collectors.StateData, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:32:16.057|INFO|[STARK_TORNO_PILOTO] Creating collector: l99.driver.fanuc.collectors.ProductionData, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:32:16.086|INFO|[f_sim_mqtt_long] Connecting broker 'tcp://127.0.0.1:1883/f_sim_mqtt_long': Unspecified/127.0.0.1:1883 |l99.driver.fanuc.transports.MQTT|
+2025/12/05 14:32:18.123|WARN|[f_sim_mqtt_long] Broker connection failed 'tcp://127.0.0.1:1883/f_sim_mqtt_long': Unspecified/127.0.0.1:1883 |l99.driver.fanuc.transports.MQTT|
+2025/12/05 14:32:18.123|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.MachineInfo, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:32:18.123|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.StateData, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:32:18.123|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.ProductionData, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:32:18.123|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.Macro, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:32:18.132|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.Pmc, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:32:18.132|INFO|[f_sim_mtc_long] Machine disabled and will not be added |l99.driver.base.Machines|
+2025/12/05 14:32:18.146|INFO|[f_sim_spb_long] Machine disabled and will not be added |l99.driver.base.Machines|
+2025/12/05 14:32:18.146|INFO|[f_sim_influx_long] Machine disabled and will not be added |l99.driver.base.Machines|
+2025/12/05 14:32:18.146|INFO|Machine tasks running |l99.driver.base.Machines|
+2025/12/05 14:32:18.179|INFO|[f_sim_mqtt_long] Strategy initializing |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:32:18.179|INFO|[STARK_TORNO_PILOTO] Strategy initializing |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:32:21.844|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (0 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:32:21.869|WARN|[f_sim_mqtt_long] Strategy initialization pending (0 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:33:25.296|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (1 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:33:25.362|WARN|[f_sim_mqtt_long] Strategy initialization pending (1 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:34:26.465|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (2 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:34:26.528|WARN|[f_sim_mqtt_long] Strategy initialization pending (2 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:35:27.506|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (3 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:35:27.550|WARN|[f_sim_mqtt_long] Strategy initialization pending (3 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:36:28.698|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (4 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:36:28.741|WARN|[f_sim_mqtt_long] Strategy initialization pending (4 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:37:29.715|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (5 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:37:29.782|WARN|[f_sim_mqtt_long] Strategy initialization pending (5 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:38:31.353|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (6 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:38:31.410|WARN|[f_sim_mqtt_long] Strategy initialization pending (6 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:39:32.475|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (7 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:39:32.521|WARN|[f_sim_mqtt_long] Strategy initialization pending (7 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:40:33.558|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (8 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:40:33.637|WARN|[f_sim_mqtt_long] Strategy initialization pending (8 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:41:34.831|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (9 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:41:34.887|WARN|[f_sim_mqtt_long] Strategy initialization pending (9 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:42:35.848|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (10 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:42:35.928|WARN|[f_sim_mqtt_long] Strategy initialization pending (10 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:43:36.898|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (11 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:43:37.011|WARN|[f_sim_mqtt_long] Strategy initialization pending (11 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:44:37.947|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (12 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:44:38.052|WARN|[f_sim_mqtt_long] Strategy initialization pending (12 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:45:39.067|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (13 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:45:39.129|WARN|[f_sim_mqtt_long] Strategy initialization pending (13 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:46:40.321|WARN|[f_sim_mqtt_long] Strategy initialization pending (14 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:46:40.374|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (14 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:47:41.505|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (15 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:47:41.565|WARN|[f_sim_mqtt_long] Strategy initialization pending (15 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:48:42.499|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (16 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:48:42.563|WARN|[f_sim_mqtt_long] Strategy initialization pending (16 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:49:43.635|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (17 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:49:43.677|WARN|[f_sim_mqtt_long] Strategy initialization pending (17 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:50:44.788|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (18 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:50:44.803|WARN|[f_sim_mqtt_long] Strategy initialization pending (18 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:51:45.855|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (19 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:51:45.939|WARN|[f_sim_mqtt_long] Strategy initialization pending (19 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:52:47.108|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (20 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:52:47.158|WARN|[f_sim_mqtt_long] Strategy initialization pending (20 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:53:48.213|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (21 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:53:48.257|WARN|[f_sim_mqtt_long] Strategy initialization pending (21 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:54:49.474|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (22 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:54:49.531|WARN|[f_sim_mqtt_long] Strategy initialization pending (22 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:55:50.481|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (23 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:55:50.524|WARN|[f_sim_mqtt_long] Strategy initialization pending (23 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:56:51.666|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (24 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 14:56:51.702|WARN|[f_sim_mqtt_long] Strategy initialization pending (24 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:05:14.095|INFO|[STARK_TORNO_PILOTO] Connecting broker 'tcp://127.0.0.1:1883/STARK_TORNO_PILOTO': Unspecified/127.0.0.1:1883 |l99.driver.fanuc.transports.MQTT|
+2025/12/05 16:05:16.280|WARN|[STARK_TORNO_PILOTO] Broker connection failed 'tcp://127.0.0.1:1883/STARK_TORNO_PILOTO': Unspecified/127.0.0.1:1883 |l99.driver.fanuc.transports.MQTT|
+2025/12/05 16:05:16.349|INFO|[STARK_TORNO_PILOTO] Creating collector: l99.driver.fanuc.collectors.MachineInfo, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:05:16.369|INFO|[STARK_TORNO_PILOTO] Creating collector: l99.driver.fanuc.collectors.StateData, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:05:16.369|INFO|[STARK_TORNO_PILOTO] Creating collector: l99.driver.fanuc.collectors.ProductionData, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:05:16.395|INFO|[f_sim_mqtt_long] Connecting broker 'tcp://127.0.0.1:1883/f_sim_mqtt_long': Unspecified/127.0.0.1:1883 |l99.driver.fanuc.transports.MQTT|
+2025/12/05 16:05:18.438|WARN|[f_sim_mqtt_long] Broker connection failed 'tcp://127.0.0.1:1883/f_sim_mqtt_long': Unspecified/127.0.0.1:1883 |l99.driver.fanuc.transports.MQTT|
+2025/12/05 16:05:18.438|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.MachineInfo, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:05:18.438|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.StateData, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:05:18.438|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.ProductionData, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:05:18.438|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.Macro, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:05:18.461|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.Pmc, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:05:18.470|INFO|[f_sim_mtc_long] Machine disabled and will not be added |l99.driver.base.Machines|
+2025/12/05 16:05:18.470|INFO|[f_sim_spb_long] Machine disabled and will not be added |l99.driver.base.Machines|
+2025/12/05 16:05:18.470|INFO|[f_sim_influx_long] Machine disabled and will not be added |l99.driver.base.Machines|
+2025/12/05 16:05:18.489|INFO|Machine tasks running |l99.driver.base.Machines|
+2025/12/05 16:05:18.514|INFO|[f_sim_mqtt_long] Strategy initializing |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:05:18.514|INFO|[STARK_TORNO_PILOTO] Strategy initializing |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:05:22.007|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (0 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:05:22.024|WARN|[f_sim_mqtt_long] Strategy initialization pending (0 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:06:23.248|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (1 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:06:23.291|WARN|[f_sim_mqtt_long] Strategy initialization pending (1 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:07:24.543|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (2 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:07:24.596|WARN|[f_sim_mqtt_long] Strategy initialization pending (2 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:08:25.791|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (3 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:08:25.842|WARN|[f_sim_mqtt_long] Strategy initialization pending (3 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:09:27.176|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (4 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:09:27.223|WARN|[f_sim_mqtt_long] Strategy initialization pending (4 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:10:28.551|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (5 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:10:28.596|WARN|[f_sim_mqtt_long] Strategy initialization pending (5 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:11:29.806|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (6 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:11:29.834|WARN|[f_sim_mqtt_long] Strategy initialization pending (6 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:12:31.381|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (7 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:12:31.423|WARN|[f_sim_mqtt_long] Strategy initialization pending (7 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:13:32.602|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (8 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:13:32.647|WARN|[f_sim_mqtt_long] Strategy initialization pending (8 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:14:33.823|WARN|[STARK_TORNO_PILOTO] Strategy initialization pending (9 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:14:33.880|WARN|[f_sim_mqtt_long] Strategy initialization pending (9 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:03.571|INFO|[STARK_TORNO_PILOTO] Connecting broker 'tcp://127.0.0.1:1883/STARK_TORNO_PILOTO': Unspecified/127.0.0.1:1883 |l99.driver.fanuc.transports.MQTT|
+2025/12/05 16:15:05.722|WARN|[STARK_TORNO_PILOTO] Broker connection failed 'tcp://127.0.0.1:1883/STARK_TORNO_PILOTO': Unspecified/127.0.0.1:1883 |l99.driver.fanuc.transports.MQTT|
+2025/12/05 16:15:05.801|INFO|[STARK_TORNO_PILOTO] Creating collector: l99.driver.fanuc.collectors.MachineInfo, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:05.819|INFO|[STARK_TORNO_PILOTO] Creating collector: l99.driver.fanuc.collectors.StateData, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:05.819|INFO|[STARK_TORNO_PILOTO] Creating collector: l99.driver.fanuc.collectors.ProductionData, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:05.849|INFO|[f_sim_mqtt_long] Connecting broker 'tcp://127.0.0.1:1883/f_sim_mqtt_long': Unspecified/127.0.0.1:1883 |l99.driver.fanuc.transports.MQTT|
+2025/12/05 16:15:07.888|WARN|[f_sim_mqtt_long] Broker connection failed 'tcp://127.0.0.1:1883/f_sim_mqtt_long': Unspecified/127.0.0.1:1883 |l99.driver.fanuc.transports.MQTT|
+2025/12/05 16:15:07.891|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.MachineInfo, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:07.891|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.StateData, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:07.891|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.ProductionData, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:07.891|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.Macro, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:07.924|INFO|[f_sim_mqtt_long] Creating collector: l99.driver.fanuc.collectors.Pmc, fanuc |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:07.924|INFO|[f_sim_mtc_long] Machine disabled and will not be added |l99.driver.base.Machines|
+2025/12/05 16:15:07.924|INFO|[f_sim_spb_long] Machine disabled and will not be added |l99.driver.base.Machines|
+2025/12/05 16:15:07.924|INFO|[f_sim_influx_long] Machine disabled and will not be added |l99.driver.base.Machines|
+2025/12/05 16:15:07.946|INFO|Machine tasks running |l99.driver.base.Machines|
+2025/12/05 16:15:07.967|INFO|[f_sim_mqtt_long] Strategy initializing |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:07.967|INFO|[STARK_TORNO_PILOTO] Strategy initializing |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:08.526|INFO|[STARK_TORNO_PILOTO] Strategy initialized |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:09.751|INFO|[STARK_TORNO_PILOTO] Strategy started |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:11.078|WARN|[f_sim_mqtt_long] Strategy initialization pending (0 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:15:43.523|ERROR|[STARK_TORNO_PILOTO] Connection lost. |l99.driver.fanuc.Platform|
+2025/12/05 16:15:43.536|ERROR|[STARK_TORNO_PILOTO] Strategy sweep failed at segment Path System.Net.Sockets.SocketException (0xFFFFFFF0): Unknown error (0xfffffff0)
+   at l99.driver.fanuc.Platform._nativeDispatch(Func`1 func, Boolean throwOnSocketError) in C:\source\ladder99\fanuc-driver\fanuc\platform\Platform.cs:line 91
+   at l99.driver.fanuc.Platform.RdPmcRng(Int16 adr_type, Int16 data_type, UInt16 s_number, UInt16 e_number, UInt16 length, Int32 IODBPMC_type) in C:\source\ladder99\fanuc-driver\fanuc\platform\RdPmcRng.cs:line 39
+   at l99.driver.fanuc.Platform.RdPmcRngGByteAsync(UInt16 number) in C:\source\ladder99\fanuc-driver\fanuc\platform\RdPmcRng.cs:line 7
+   at CallSite.Target(Closure, CallSite, Object)
+   at l99.driver.fanuc.collectors.StateData.CollectForEachPathAsync(Int16 currentPath, String[] axis, String[] spindle, Object pathMarker) in C:\source\ladder99\fanuc-driver\fanuc\collectors\StateData.cs:line 33
+   at CallSite.Target(Closure, CallSite, Object)
+   at l99.driver.fanuc.strategies.FanucMultiStrategy.CollectForEachPathAsync(Int16 currentPath, String[] axis, String[] spindle, Object pathMarker) in C:\source\ladder99\fanuc-driver\fanuc\strategies\FanucMultiStrategy.cs:line 112
+   at CallSite.Target(Closure, CallSite, Object)
+   at l99.driver.fanuc.strategies.FanucExtendedStrategy.CollectAsync() in C:\source\ladder99\fanuc-driver\fanuc\strategies\FanucExtendedStrategy.cs:line 585|l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:16:12.232|WARN|[f_sim_mqtt_long] Strategy initialization pending (1 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:17:13.513|WARN|[f_sim_mqtt_long] Strategy initialization pending (2 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:18:14.551|WARN|[f_sim_mqtt_long] Strategy initialization pending (3 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:19:15.824|WARN|[f_sim_mqtt_long] Strategy initialization pending (4 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:20:10.413|INFO|[STARK_TORNO_PILOTO] Strategy recovered |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:20:16.952|WARN|[f_sim_mqtt_long] Strategy initialization pending (5 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:21:18.187|WARN|[f_sim_mqtt_long] Strategy initialization pending (6 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:22:19.440|WARN|[f_sim_mqtt_long] Strategy initialization pending (7 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:23:20.654|WARN|[f_sim_mqtt_long] Strategy initialization pending (8 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:24:21.757|WARN|[f_sim_mqtt_long] Strategy initialization pending (9 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:25:22.847|WARN|[f_sim_mqtt_long] Strategy initialization pending (10 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:26:24.182|WARN|[f_sim_mqtt_long] Strategy initialization pending (11 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:26:45.418|ERROR|[STARK_TORNO_PILOTO] Connection lost. |l99.driver.fanuc.Platform|
+2025/12/05 16:26:45.418|ERROR|[STARK_TORNO_PILOTO] Strategy sweep failed at segment Root System.Net.Sockets.SocketException (0xFFFFFFF0): Unknown error (0xfffffff0)
+   at l99.driver.fanuc.Platform.RdParam(Int16 number, Int16 axis, Int16 length, Int32 IODBPSD_type) in C:\source\ladder99\fanuc-driver\fanuc\platform\RdParam.cs:line 52
+   at l99.driver.fanuc.Platform.RdParamDoubleWordNoAxisAsync(Int16 number) in C:\source\ladder99\fanuc-driver\fanuc\platform\RdParam.cs:line 17
+   at CallSite.Target(Closure, CallSite, Object)
+   at l99.driver.fanuc.collectors.StateData.CollectRootAsync() in C:\source\ladder99\fanuc-driver\fanuc\collectors\StateData.cs:line 20
+   at l99.driver.fanuc.strategies.FanucMultiStrategy.CollectRootAsync() in C:\source\ladder99\fanuc-driver\fanuc\strategies\FanucMultiStrategy.cs:line 97
+   at l99.driver.fanuc.strategies.FanucExtendedStrategy.CollectAsync() in C:\source\ladder99\fanuc-driver\fanuc\strategies\FanucExtendedStrategy.cs:line 517|l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:27:25.383|WARN|[f_sim_mqtt_long] Strategy initialization pending (12 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:28:26.677|WARN|[f_sim_mqtt_long] Strategy initialization pending (13 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:29:27.843|WARN|[f_sim_mqtt_long] Strategy initialization pending (14 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:30:28.922|WARN|[f_sim_mqtt_long] Strategy initialization pending (15 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:31:30.096|WARN|[f_sim_mqtt_long] Strategy initialization pending (16 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:32:31.340|WARN|[f_sim_mqtt_long] Strategy initialization pending (17 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:33:32.543|WARN|[f_sim_mqtt_long] Strategy initialization pending (18 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:34:33.812|WARN|[f_sim_mqtt_long] Strategy initialization pending (19 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:35:35.053|WARN|[f_sim_mqtt_long] Strategy initialization pending (20 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:36:36.168|WARN|[f_sim_mqtt_long] Strategy initialization pending (21 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:37:37.338|WARN|[f_sim_mqtt_long] Strategy initialization pending (22 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:38:38.396|WARN|[f_sim_mqtt_long] Strategy initialization pending (23 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:39:39.569|WARN|[f_sim_mqtt_long] Strategy initialization pending (24 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:40:40.696|WARN|[f_sim_mqtt_long] Strategy initialization pending (25 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:41:41.981|WARN|[f_sim_mqtt_long] Strategy initialization pending (26 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:42:43.106|WARN|[f_sim_mqtt_long] Strategy initialization pending (27 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:43:44.359|WARN|[f_sim_mqtt_long] Strategy initialization pending (28 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:44:45.628|WARN|[f_sim_mqtt_long] Strategy initialization pending (29 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:45:46.879|WARN|[f_sim_mqtt_long] Strategy initialization pending (30 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:46:48.083|WARN|[f_sim_mqtt_long] Strategy initialization pending (31 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:47:49.371|WARN|[f_sim_mqtt_long] Strategy initialization pending (32 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|
+2025/12/05 16:48:50.556|WARN|[f_sim_mqtt_long] Strategy initialization pending (33 min) |l99.driver.fanuc.strategies.FanucMultiStrategy|

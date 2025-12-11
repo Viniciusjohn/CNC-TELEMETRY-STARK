@@ -1,0 +1,33 @@
+machines:
+  - id: STARK_TORNO_PILOTO
+    enabled: !!bool true
+    type: l99.driver.fanuc.FanucMachine, fanuc
+    strategy: l99.driver.fanuc.strategies.FanucMultiStrategy, fanuc
+    handler: l99.driver.fanuc.handlers.FanucOne, fanuc
+    transport: l99.driver.fanuc.transports.MQTT, fanuc
+    l99.driver.fanuc.FanucMachine, fanuc:
+      sweep_ms: !!int 2000
+      net:
+        ip: 192.168.1.1
+        port: !!int 8193
+        timeout_s: !!int 10
+    l99.driver.fanuc.strategies.FanucMultiStrategy, fanuc:
+      stay_connected: !!bool true
+      collectors:
+      - l99.driver.fanuc.collectors.MachineInfo, fanuc
+      - l99.driver.fanuc.collectors.StateData, fanuc
+      #- l99.driver.fanuc.collectors.ProductionData, fanuc
+      #- l99.driver.fanuc.collectors.Macro, fanuc
+      #- l99.driver.fanuc.collectors.Pmc, fanuc
+    l99.driver.fanuc.handlers.FanucOne, fanuc:
+      iso8601: !!bool false
+      change_only: !!bool true
+      skip_internal: !!bool true
+    l99.driver.fanuc.transports.MQTT, fanuc:
+      publish_model: !!bool false
+      topic: fanuc/{{machine.Id}}/{{veneer.Name}}
+      net:
+        type: tcp
+        ip: 127.0.0.1
+        port: !!int 1883
+      anonymous: !!bool true

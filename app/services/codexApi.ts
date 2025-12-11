@@ -1,0 +1,1 @@
+// Arquivo removido. Funcionalidade migrada para chatService.ts usando Google GenAI SDK.

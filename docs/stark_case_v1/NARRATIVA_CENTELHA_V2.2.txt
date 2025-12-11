@@ -1,0 +1,29 @@
+# NARRATIVA TÉCNICA - CENTELHA V2.2
+# CASE: PILOTO STARK BRASIL (DEZ/2025)
+
+## 1. O Problema
+A indústria brasileira opera com cegueira de dados. Máquinas CNC de alto valor (R$ 500k+) funcionam desconectadas, dependendo de apontamentos manuais em papel para medir OEE (Eficiência Global).
+O desafio técnico sempre foi: como extrair dados de máquinas legadas (FANUC) sem instalar hardware invasivo ou caro?
+
+## 2. A Solução (Validada em Campo)
+O CNC-Telemetry é uma solução 100% software que converte o protocolo industrial FOCAS (Ethernet) em métricas de negócio em tempo real via MQTT.
+
+### Arquitetura Comprovada (Piloto Stark)
+Em Dezembro de 2025, validamos a tecnologia em ambiente real de produção na STARK Brasil, conectando tornos FANUC 0i-TF.
+
+*   **Coleta Passiva:** O driver Ladder99 lê a memória da CNC a cada 1000ms sem impactar o ciclo de usinagem.
+*   **Normalização na Borda:** Dados brutos (bits de status, contadores) são convertidos em JSON padronizado (`fanuc/STARK_TORNO_PILOTO/state`).
+*   **Rastreabilidade Total:** Cada peça produzida gera um registro imutável no banco de dados, com timestamp de início, fim e programa utilizado.
+
+## 3. Resultados do Piloto (Evidências)
+O sistema operou em regime contínuo, entregando:
+1.  **Monitoramento de Status:** Detecção automática de paradas (Setup, Alarme, Ocioso) eliminando o "achismo" sobre o uso da máquina.
+2.  **Contagem Automática:** Eliminação do apontamento manual de peças. O sistema conta ciclos reais baseados na lógica interna da máquina.
+3.  **Telemetria de Processo:** Gráficos de RPM e Avanço (Feed Rate) permitiram à engenharia identificar gargalos de processo (ex: operadores reduzindo o avanço para 80%).
+
+## 4. Diferencial Tecnológico
+Ao contrário de concorrentes que exigem "caixas pretas" (hardware IoT), nossa solução roda em infraestrutura de TI padrão (PC/Servidor), integrando-se nativamente à rede da fábrica.
+O ambiente de demonstração (Demo) reflete 100% a arquitetura de campo, garantindo que o que o cliente vê é exatamente o que será entregue.
+
+## 5. Próximos Passos
+Com a validação técnica concluída (TRL 7/8), o foco se volta para a escalabilidade comercial e integração com ERPs para fechamento automático de ordens de produção.
