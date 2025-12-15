@@ -44,6 +44,7 @@ class CncMachineData(TelemetrySample):
     Inclui campos calculados ou históricos que não vêm diretamente do driver.
     """
     controller_type: str
+    model: Optional[str] = None # Modelo Específico (ex: FANUC 0i-TF Plus)
     availability: str # AVAILABLE | UNAVAILABLE (MTConnect concept)
     execution_state: str # Mapeado de state para compatibilidade UI (ACTIVE, READY, STOPPED)
     

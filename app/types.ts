@@ -32,6 +32,7 @@ export interface TelemetrySample {
 // Dados Completos para Dashboard (Estende TelemetrySample)
 export interface CncMachineData extends TelemetrySample {
   controller_type: 'M70' | 'M80' | 'M800' | 'FANUC';
+  model?: string; // Modelo específico (ex: FANUC 0i-TF Plus)
   
   // MTConnect Availability (UI Derived)
   availability: Availability;

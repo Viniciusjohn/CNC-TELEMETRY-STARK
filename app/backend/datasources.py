@@ -139,9 +139,13 @@ class FanucMqttDataSource:
                 sample_data["cycle_time_total_s"] = tracker_state.last_cycle_total_s
         
         # Build full CncMachineData
+        config = STARK_MACHINES_BY_ID.get(machine_id)
+        model_name = config.model if config else "FANUC Generic"
+
         return CncMachineData(
             **sample_data,
             controller_type="FANUC",
+            model=model_name,
             availability="AVAILABLE",
             execution_state=ui_exec_state,
             connection_status="ONLINE",
@@ -378,7 +382,7 @@ def generate_raw_events(count=100):
         combined.sort(key=lambda x: x["timestamp_obj"], reverse=True)
         
         # Trim to requested count
-        final_list = combined[:count]
+        final_list = combined[:limit] if limit else combined
         
         # Clean up obj before sending
         output = []

@@ -84,6 +84,7 @@ async def get_dashboard_data():
                 machine_id=cfg.id,
                 state="OFFLINE",
                 controller_type="FANUC", # Default
+                model=cfg.model, # Model from Config (Correct display even if offline)
                 timestamp=datetime.now().isoformat(),
                 availability="UNAVAILABLE",
                 execution_state="STOPPED",
@@ -144,7 +145,8 @@ async def export_csv():
     """
     Exporta os eventos em formato CSV para download.
     """
-    events = generate_raw_events()
+    # Export ALL events (no limit) for CSV
+    events = generate_raw_events(limit=None)
     if not events:
         return Response(content="No data", media_type="text/plain")
 

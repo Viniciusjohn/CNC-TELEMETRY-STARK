@@ -55,7 +55,16 @@ const MachinePanel: React.FC<{ machine: CncMachineData, oeeTrend: number[], char
             <div className={`px-3 py-2 flex justify-between items-center border-b border-slate-800 ${statusBg}`}>
                 <div className="flex items-center gap-2">
                     <div className={`w-3 h-3 rounded-sm ${isOffline ? 'bg-slate-600' : isRunning ? 'bg-emerald-500 animate-pulse' : isError ? 'bg-rose-500 animate-pulse' : 'bg-amber-500'}`} />
-                    <span className="text-lg font-bold text-white tracking-widest">{machine.machine_id}</span>
+                    <div className="flex flex-col">
+                        <span className="text-sm font-bold text-white tracking-widest leading-tight">
+                            {machine.model || machine.machine_id}
+                        </span>
+                        {machine.model && (
+                            <span className="text-[9px] text-slate-400 font-bold tracking-wider">
+                                {machine.machine_id}
+                            </span>
+                        )}
+                    </div>
                 </div>
                 <span className={`text-xs font-bold uppercase ${statusText}`}>
                     {isDisconnected ? 'NO CONNECTION' : (isOffline ? 'NO NET' : machine.execution_state)}
@@ -179,7 +188,7 @@ const MachinePanel: React.FC<{ machine: CncMachineData, oeeTrend: number[], char
             {/* Footer: Counters */}
             <div className="px-3 py-1.5 bg-slate-950 border-t border-slate-800 flex justify-between text-[10px] text-slate-500">
                 <span>CNT: {machine.part_count}</span>
-                <span>{machine.controller_type}</span>
+                <span>{machine.model || machine.controller_type}</span>
             </div>
         </div>
     );
@@ -283,13 +292,7 @@ const App: React.FC = () => {
                     <Cpu className="w-5 h-5 text-indigo-400" />
                 </div>
                 <div>
-                    <h1 className="text-sm font-bold text-white tracking-widest uppercase">STARK TELEMETRY <span className="text-indigo-500 text-[10px]">| CNC MONITOR</span></h1>
-                    <div className="flex items-center gap-2 text-[10px] text-slate-500 font-mono">
-                        <span className="flex items-center gap-1">
-                            <Wifi className={`w-3 h-3 ${data?.source === 'python_pipeline' ? 'text-emerald-500' : 'text-amber-500'}`} />
-                            {data?.source === 'python_pipeline' ? 'GATEWAY: ONLINE' : 'GATEWAY: SIMULATION'}
-                        </span>
-                    </div>
+                    <h1 className="text-sm font-bold text-white tracking-widest uppercase">CNC GENIUS TELEMETRIA</h1>
                 </div>
             </div>
         </div>

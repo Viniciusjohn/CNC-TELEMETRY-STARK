@@ -65,12 +65,21 @@ def load_machines_from_driver_config() -> List[MachineConfig]:
             net_config = m.get('l99.driver.fanuc.FanucMachine, fanuc', {}).get('net', {})
             ip = net_config.get('ip', '127.0.0.1')
             
-            # Nome e Modelo não estão no driver, então inferimos ou usamos defaults
-            # Em um cenário real, poderíamos ter um mapa auxiliar ou adicionar metadados no driver (comentários ou campos custom)
-            # Por enquanto, geramos baseados no ID
+            # Mapeamento de Modelos STARK Brasil
+            # Baseado em:
+            # STARK_TORNO_PILOTO -> FANUC 0i-TF Plus
+            # STARK_TORNO_02     -> FANUC 0i-TF
+            # STARK_CENTRO_01    -> FANUC 0i-MD
+            
             name = mid.replace('_', ' ').title()
-            model = "Fanuc Generic"
-            if "0i-TF" in mid: model = "0i-TF"
+            model = "FANUC Generic"
+            
+            if "TORNO_PILOTO" in mid:
+                model = "FANUC 0i-TF Plus"
+            elif "TORNO_02" in mid:
+                model = "FANUC 0i-TF"
+            elif "CENTRO_01" in mid:
+                model = "FANUC 0i-MD"
             
             machines.append(MachineConfig(
                 id=mid,

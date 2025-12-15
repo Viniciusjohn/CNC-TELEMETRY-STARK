@@ -1,14 +1,15 @@
 # Start Stark Telemetry System (Pilot v1)
 # Usage: right-click -> Run with PowerShell
 
+$ScriptRoot = $PSScriptRoot
 Write-Host "=== INICIANDO PILOTO STARK TELEMETRY v1 ===" -ForegroundColor Cyan
+Write-Host "Raiz do Projeto: $ScriptRoot" -ForegroundColor Gray
 
 # 1. Configurar Ambiente
 $env:TELEMETRY_ENV = "field"
 Write-Host "Modo: FIELD (Conexão Real)" -ForegroundColor Yellow
 
 # 2. Verificar Broker MQTT
-# Tenta conectar na porta 1883 local para ver se tem broker rodando
 $broker = Test-NetConnection -ComputerName localhost -Port 1883 -WarningAction SilentlyContinue
 if (-not $broker.TcpTestSucceeded) {
     Write-Host "[ERRO] Broker MQTT não encontrado na porta 1883." -ForegroundColor Red
@@ -20,16 +21,17 @@ Write-Host "[OK] Broker MQTT detectado." -ForegroundColor Green
 
 # 3. Iniciar Backend (FastAPI)
 Write-Host "Iniciando Backend..."
-$backendProcess = Start-Process -FilePath "python" -ArgumentList "-m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload" -WorkingDirectory ".\app" -PassThru -NoNewWindow
+$appDir = Join-Path $ScriptRoot "app"
+$backendProcess = Start-Process -FilePath "python" -ArgumentList "-m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload" -WorkingDirectory $appDir -PassThru -NoNewWindow
 Write-Host "[OK] Backend rodando (PID: $($backendProcess.Id))" -ForegroundColor Green
 
 # 4. Iniciar Driver Fanuc
 Write-Host "Iniciando Driver Fanuc (Ladder99)..."
-# O driver é um executável .NET ou comando?
-# Assumindo que foi compilado ou está disponível como l99.driver.fanuc.exe
-$driverPath = ".\fanuc-driver\fanuc.exe" # Ajustado para o nome real do binário
+$driverDir = Join-Path $ScriptRoot "fanuc-driver"
+$driverPath = Join-Path $driverDir "fanuc.exe"
+
 if (Test-Path $driverPath) {
-    $driverProcess = Start-Process -FilePath $driverPath -WorkingDirectory ".\fanuc-driver" -PassThru -NoNewWindow
+    $driverProcess = Start-Process -FilePath $driverPath -WorkingDirectory $driverDir -PassThru -NoNewWindow
     Write-Host "[OK] Driver rodando (PID: $($driverProcess.Id))" -ForegroundColor Green
 }
 else {
@@ -39,7 +41,7 @@ else {
 
 # 5. Iniciar Frontend
 Write-Host "Iniciando Frontend..."
-$frontendProcess = Start-Process -FilePath "npm.cmd" -ArgumentList "run dev" -WorkingDirectory ".\app" -PassThru -NoNewWindow
+$frontendProcess = Start-Process -FilePath "npm.cmd" -ArgumentList "run dev" -WorkingDirectory $appDir -PassThru -NoNewWindow
 Write-Host "[OK] Frontend iniciado." -ForegroundColor Green
 
 Write-Host "--- SISTEMA OPERACIONAL ---" -ForegroundColor Cyan
@@ -50,7 +52,10 @@ Write-Host "Pressione Ctrl+C para encerrar todos os processos..."
 try {
     while ($true) {
         Start-Sleep -Seconds 1
-        if ($backendProcess.HasExited) { throw "Backend encerrou inesperadamente." }
+        if ($backendProcess.HasExited) { 
+            Write-Host "Backend encerrou inesperadamente." -ForegroundColor Red
+            break 
+        }
     }
 }
 catch {

@@ -19,7 +19,13 @@ Este documento lista os requisitos e verificações necessários antes de implan
 - [ ] Verificar se o serviço MQTT (Mosquitto) está rodando na porta 1883.
 - [ ] Validar conectividade com a CNC: `ping 192.168.1.1`.
 
-### 3. Validação de Dados (Smoke Test)
+### 3. Preparação (Host)
+- [ ] Limpar processos antigos: `Get-Process ladder99, fanuc-driver -ErrorAction SilentlyContinue | Stop-Process -Force`
+- [ ] **Limpar Dados Antigos:** Rodar `reset_stark_data.ps1` (digitar RESET) para apagar histórico de testes.
+- [ ] Verificar IP da máquina host: `ipconfig` (Deve estar na mesma subnet da CNC).
+- [ ] Sincronizar relógio do Windows com servidor NTP (importante para logs).
+
+### 4. Validação de Dados (Smoke Test)
 - [ ] Iniciar sistema: `start_stark.ps1`.
 - [ ] Verificar logs do Backend para confirmar carregamento de `config.machines.yml`.
 - [ ] Verificar logs do Driver para confirmar conexão "FOCAS Success".

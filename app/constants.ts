@@ -1,5 +1,5 @@
 
-export const MACHINES = ['CNC-01 (M80)', 'CNC-02 (M70)', 'CNC-03 (M80)', 'VMC-A (Fanuc)', 'HMC-B (M800)'];
+export const MACHINES = ['STARK_TORNO_PILOTO', 'STARK_TORNO_02', 'STARK_CENTRO_01'];
 export const PROGRAMS = ['O0010 (Faceamento)', 'O1200 (Usinagem Eixo)', 'O5050 (Furação Base)', 'O9001 (Macro Probe)'];
 export const TOOLS = ['T01 (Face Mill)', 'T02 (End Mill 10mm)', 'T03 (Drill 5mm)', 'T04 (Tap M6)', 'T05 (Probe)'];
 

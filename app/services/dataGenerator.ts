@@ -9,25 +9,46 @@ const randomChoice = <T>(arr: T[]): T => arr[Math.floor(Math.random() * arr.leng
 // Estado interno persistente da simulação
 const machinesState: Record<string, CncMachineData> = {};
 
-const initializeMachine = (id: string): CncMachineData => ({
-    machine_id: id,
-    controller_type: id.includes('M70') ? 'M70' : id.includes('Fanuc') ? 'FANUC' : 'M80',
-    timestamp: new Date().toISOString(),
-    availability: 'AVAILABLE',
-    execution_state: 'ACTIVE',
-    controller_mode: 'MEM',
-    program_name: randomChoice(PROGRAMS),
-    current_block: 'N10 G01 X100 F2000',
-    current_tool: randomChoice(TOOLS),
-    spindle_load: 0,
-    spindle_speed: 0,
-    feed_rate: 0,
-    feed_rate_override: 100,
-    load_history: Array(20).fill(0),
-    part_count: randomInt(50, 200),
-    run_time_min: randomInt(100, 400),
-    active_alarm: null
-});
+const initializeMachine = (id: string): CncMachineData => {
+    let type: 'FANUC' | 'M70' | 'M80' | 'M800' = 'FANUC';
+    let model = 'FANUC Generic';
+
+    if (id === 'STARK_TORNO_PILOTO') {
+        model = 'FANUC 0i-TF Plus';
+    } else if (id === 'STARK_TORNO_02') {
+        model = 'FANUC 0i-TF';
+    } else if (id === 'STARK_CENTRO_01') {
+        model = 'FANUC 0i-MD';
+    } else if (id.includes('M70')) {
+        type = 'M70';
+        model = 'Mitsubishi M70';
+    } else if (id.includes('M80')) {
+        type = 'M80';
+        model = 'Mitsubishi M80';
+    }
+
+    return {
+        machine_id: id,
+        controller_type: type,
+        model: model,
+        timestamp: new Date().toISOString(),
+        availability: 'AVAILABLE',
+        state: 'RUN', // Required by TelemetrySample
+        execution_state: 'ACTIVE',
+        controller_mode: 'MEM',
+        program_name: randomChoice(PROGRAMS),
+        current_block: 'N10 G01 X100 F2000',
+        current_tool: randomChoice(TOOLS),
+        spindle_load: 0,
+        spindle_speed: 0,
+        feed_rate: 0,
+        feed_rate_override: 100,
+        load_history: Array(20).fill(0),
+        part_count: randomInt(50, 200),
+        run_time_min: randomInt(100, 400),
+        active_alarm: null
+    };
+};
 
 export const generateSimulatedDashboardData = (): DashboardData => {
     // Inicializa

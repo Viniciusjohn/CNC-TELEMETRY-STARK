@@ -1,4 +1,5 @@
 @echo off
+cd /d %~dp0
 set TELEMETRY_ENV=field
 REM Default Fanuc IP if not set in system
 if "%FANUC_HOST%"=="" set FANUC_HOST=192.168.1.100
