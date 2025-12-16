@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Response, Depends
 from fastapi.middleware.cors import CORSMiddleware
-from backend.config import IS_LAB, FANUC_PORT, TELEMETRY_ENV, STARK_MACHINES, MachineConfig
+from backend.config import IS_LAB, TELEMETRY_ENV, STARK_MACHINES, MachineConfig
 from backend.datasources import FanucMqttDataSource, generate_raw_events, FanucNotAvailableError
 from backend.models import CncMachineData, DashboardData
 from backend.db import get_db, Event, Cycle, engine, Base

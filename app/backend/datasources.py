@@ -1,4 +1,3 @@
-import httpx
 import paho.mqtt.client as mqtt
 import json
 import time
@@ -6,7 +5,7 @@ import logging
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional, Protocol
 from backend.models import CncMachineData, DashboardData, TelemetrySample
-from backend.config import FANUC_PORT, STARK_MACHINES_BY_ID, FANUC_DRIVER_BASE_URL, MQTT_BROKER_HOST, MQTT_BROKER_PORT, MQTT_TOPIC_PREFIX
+from backend.config import STARK_MACHINES_BY_ID, MQTT_BROKER_HOST, MQTT_BROKER_PORT, MQTT_TOPIC_PREFIX
 from backend.cycles import cycle_tracker
 from backend.adapters import FanucAdapter
 

@@ -13,10 +13,6 @@ IS_FIELD = TELEMETRY_ENV == "field"
 # Logger
 logger = logging.getLogger(__name__)
 
-# Fanuc Configuration (Field Mode)
-FANUC_PORT = int(os.getenv("FANUC_PORT", "8193"))
-FANUC_DRIVER_BASE_URL = os.getenv("FANUC_DRIVER_BASE_URL", "http://localhost:9001") # Deprecated soon
-
 # MQTT Configuration
 MQTT_BROKER_HOST = os.getenv("MQTT_BROKER_HOST", "localhost")
 MQTT_BROKER_PORT = int(os.getenv("MQTT_BROKER_PORT", "1883"))
